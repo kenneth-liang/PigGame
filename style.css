@@ -8,12 +8,19 @@
     font-family: 'Lato';
     text-align: center;
     padding: 10px;
-    width: 160px;
+    width: 200px;
     text-transform: uppercase;
 }
 .final-score:focus { outline: none; }
 #dice-1 { top: 120px; }
 #dice-2 { top: 250px; }
+
+.switch-div {
+  position: absolute;
+  left: 45%;
+}
+
+#switch { top: 360px;}
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +32,7 @@
     clear: both;
 }
 body {
-    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(pig.jpg);
+    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(pig.png);
     background-size: cover;
     background-position: center;
     font-family: Lato;
@@ -149,7 +156,7 @@ header, footer {
 }
 
 header{
-  justify-content: space-around;
+  justify-content: space-evenly;;
   background-color:#2d333f;
   color: white;
   text-align: center;
@@ -197,7 +204,7 @@ footer{
   margin: 5% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 60%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
@@ -231,8 +238,12 @@ footer{
   padding: .5rem;
 }
 
-.pig2{
+.pig2{  
   height: 150px;
+  position: absolute;
+  top: 9.1%;
+  left: 65%;
+  transform: rotate(180deg);
 }
 
 .pig-container{
