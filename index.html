@@ -8,6 +8,7 @@
   <script src="https://kit.fontawesome.com/555ec7bf31.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <link type="text/css" rel="stylesheet" href="style.css">
+  <link type="text/css" rel="stylesheet" href="fireworks.css">
   <title>Pig DOM Game</title>
 </head>
 
@@ -30,15 +31,19 @@
           the next player’s turn</li>
           <li>The first player to reach the user-set winning score wins the game</li>
           <li>Default winning score is set at 100 points</li>
-          <div class="pig-container">
-            <img src="pig2.png" class="pig2">
-          </div>
         </div>
-
+        <div class="pig-container">
+          <img src="pig2.png" class="pig2">
+        </div>
         </div>
       </div>
     </div>
   </header>
+
+  <div class="pyro" id="pyro" style="visibility: hidden" >
+    <div class="before"></div>
+    <div class="after"></div>
+  </div>
 
   <div class="wrapper clearfix">
     <div class="player-0-panel active">
