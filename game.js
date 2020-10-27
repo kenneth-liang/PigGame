@@ -19,6 +19,7 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
     document.getElementById('dice-1').src = 'dice-' + dice1 + '.png';
     document.getElementById('dice-2').src = 'dice-' + dice2 + '.png';
     document.getElementById("switch").style = "visibility: hidden";
+    document.getElementById("pyro").style = "visibility: hidden";
     //3. Update the round score IF the rolled number was NOT a 1
     if (dice1 !== 1 && dice2 !== 1) {
       
@@ -70,6 +71,7 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
       document.getElementById('dice-2').style.display = 'none';
       document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
       document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
+      document.getElementById("pyro").style = "visibility: visible";
       gamePlaying = false;
     } else {
       //Next player
@@ -109,4 +111,5 @@ function init() {
   document.querySelector('.player-0-panel').classList.remove('active');
   document.querySelector('.player-1-panel').classList.remove('active');
   document.querySelector('.player-0-panel').classList.add('active');
+  document.getElementById("pyro").style = "visibility: hidden";
 }
